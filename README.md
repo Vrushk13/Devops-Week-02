@@ -22,6 +22,39 @@ That are listed below
 #Kubernetes
 #Jenkins
 
+## Git Concepts Practiced
+
+- Git repository
+- Git add
+- Git commit
+- Git branch
+- Git merge
+- Pull Request
+- Merge conflict
+- GitHub
+
+## Project Files
+
+- README.md - Project documentation
+- index.html - Project web page
+- app.py - Python application
+- Dockerfile - Docker configuration
+- .gitignore - Files ignored by Git
+
+
+## Branches
+
+- main - Main project branch
+- feature-1 - Application setup changes
+- feature-2 - Project page and application changes
+
+## Conclusion
+
+This project demonstrates basic Git and GitHub workflow including branches, commits, merging, pull requests, and conflict resolution.
+
+Save and exit.
+
+
 ##Project Structure
 
 '''text
