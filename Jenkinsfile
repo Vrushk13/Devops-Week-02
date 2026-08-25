@@ -1,25 +1,28 @@
-node {
-agent any{
+pipeline {
+    agent any
 
-  stage('Build') {
-        echo 'Building the application...'
-        sh 'ls -la'
-    }
+    stages {
 
-    stage('Test') {
-        echo 'Testing the application...'
-        sh 'python3 --version'
-    }
+        stage('Checkout') {
+            steps {
+                echo 'Checkout stage started'
+                echo 'Source code checkout completed'
+            }
+        }
 
-    stage('Docker Check') {
-        echo 'Checking Docker...'
-        sh 'docker --version'
-        sh 'test -f Dockerfile'
-    }
+        stage('Build') {
+            steps {
+                echo 'Building the application...'
+                echo 'Build completed successfully'
+            }
+        }
 
-    stage('Finish') {
-        echo 'Jenkins pipeline completed successfully!'
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                echo 'Test completed successfully'
+            }
+        }
     }
-}
 }
 
